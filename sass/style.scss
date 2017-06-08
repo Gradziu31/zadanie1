@@ -1,0 +1,115 @@
+@import "normalize.css";
+@import "reset.css";
+@import "common/_typography.scss";
+@import "common/_variables.scss";
+@import "components/_buttons.scss";
+@import "components/_forms.scss";
+@import "components/_navigations.scss";
+@import "layouts/_header.scss";
+@import "layouts/_footer.scss";
+@import "layouts/_homepage.scss";
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/TitilliumText22L001.otf);
+}
+
+.wrap {
+    background-image: url("../images/ground.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    .container {
+        height: 120vh;
+        width: 920px;
+        margin: 0 auto;
+        .logo {
+            img {
+                margin: 0 auto;
+                max-width: 500px;
+                display: block;
+                padding: 55px 0px 0px 75px;
+                opacity: 0.5;
+            }
+        }
+        .parrent {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .form--left {
+                h2 {
+                    text-align: center;
+                    font-size: 32px;
+                    padding: 20px;
+                    color: #ffffff;
+                    font-family: myFirstFont;
+                    font-weight: 900;
+                    text-shadow: 2px 2px 2px #2B0100;
+                    letter-spacing: 1px;
+                }
+                .box--border {
+                    min-width: 420px;
+                    background: rgba(0, 0, 0, 0.23);
+                    border-radius: 3px;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                    .box--content {
+                        background: #f4f4f4;
+                        min-width: 380px;
+                        border-radius: 3px;
+                        margin: 20px;
+                        .box--input {
+                            display: flex;
+                            max-width: 336px;
+                            border: 1px solid #c6c6c6;
+                            border-radius: 3px;
+                            margin: 20px auto 20px;
+                            label {
+                                border-right: 1px solid #e4e4e4;
+                                width: 60px;
+                                height: 30px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin-top: 5px;
+                                img {
+                                    max-width: 100%;
+                                    height: auto !important;
+                                }
+                            }
+                            input {
+                                width: 275px;
+                                height: 40px;
+                                background-color: #f4f4f4;
+                                border: none;
+                                padding: 0 15px;
+                                color: #afafaf;
+                                font-size: 16px;
+                                font-weight: 300;
+                                font-family: 'Titillium Web', sans-serif;
+                            }
+                        }
+                    }
+                }
+            }
+            .form--right {
+                .box--border {
+                    min-width: 420px;
+                    background: rgba(0, 0, 0, 0.23);
+                    border-radius: 3px;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                    .box--content {
+                        background: #f4f4f4;
+                        max-width: 380px;
+                        border-radius: 3+px;
+                        margin: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

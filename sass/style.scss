@@ -17,16 +17,18 @@
     background-image: url("../images/ground.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    .container {
+    .container { 
         max-width: 920px;
         margin: 0 auto;
-        .logo {
+        .logo { 
+            display: flex;
+            padding: 55px 0px 10px 0px;
             img {
                 margin: 0 auto;
-                max-width: 500px;
+                max-width: 450px;
                 display: block;
-                padding: 55px 0px 0px 75px;
                 opacity: 0.5;
+                width: 100%;
             }
         }
         .parrent {
@@ -34,6 +36,10 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
+            @media all and (max-width: 890px) {
+                flex-direction: column;
+                justify-content: center;
+            }
             .form--left {
                 h2 {
                     text-align: center;
@@ -46,13 +52,17 @@
                     letter-spacing: 1px;
                 }
                 .box--border {
-                    min-width: 420px;
+                    max-width: 420px;
+                    width: 100%;
                     background: rgba(0, 0, 0, 0.23);
                     border-radius: 3px;
                     display: flex;
                     justify-content: center;
                     align-content: center;
                     align-items: center;
+                    @media all and (max-width: 890px) {
+                        margin: 0 auto;
+                    }
                     .box--content {
                         background: #f4f4f4;
                         max-width: 380px;
@@ -157,21 +167,23 @@
                             }
                         }
                         .sing-up {
-                            cursor: pointer;
                             margin: 20px;
-                            width: 100%;
-                            max-width: 340px;
-                            border: 1px solid rgb(59, 154, 0);
-                            border-radius: 3px;
-                            height: 45px;
-                            color: #fff;
-                            background: rgba(172, 220, 84, 1);
-                            background: -moz-linear-gradient(top, rgba(172, 220, 84, 1) 0%, rgba(172, 220, 84, 1) 1%, rgba(127, 195, 31, 1) 100%);
-                            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(172, 220, 84, 1)), color-stop(1%, rgba(172, 220, 84, 1)), color-stop(100%, rgba(127, 195, 31, 1)));
-                            background: -webkit-linear-gradient(top, rgba(172, 220, 84, 1) 0%, rgba(172, 220, 84, 1) 1%, rgba(127, 195, 31, 1) 100%);
-                            background: -o-linear-gradient(top, rgba(172, 220, 84, 1) 0%, rgba(172, 220, 84, 1) 1%, rgba(127, 195, 31, 1) 100%);
-                            background: -ms-linear-gradient(top, rgba(172, 220, 84, 1) 0%, rgba(172, 220, 84, 1) 1%, rgba(127, 195, 31, 1) 100%);
-                            background: linear-gradient(to bottom, rgba(172, 220, 84, 1) 0%, rgba(172, 220, 84, 1) 1%, rgba(127, 195, 31, 1) 100%);
+                            &__button {
+                                cursor: pointer;
+                                max-width: 340px;
+                                width: 100%;
+                                border: 1px solid rgb(59, 154, 0);
+                                border-radius: 3px;
+                                height: 45px;
+                                color: #fff;
+                                background: rgba(172, 220, 84, 1);
+                                background: -moz-linear-gradient(top, rgba(172, 220, 84, 1) 0%, rgba(172, 220, 84, 1) 1%, rgba(127, 195, 31, 1) 100%);
+                                background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(172, 220, 84, 1)), color-stop(1%, rgba(172, 220, 84, 1)), color-stop(100%, rgba(127, 195, 31, 1)));
+                                background: -webkit-linear-gradient(top, rgba(172, 220, 84, 1) 0%, rgba(172, 220, 84, 1) 1%, rgba(127, 195, 31, 1) 100%);
+                                background: -o-linear-gradient(top, rgba(172, 220, 84, 1) 0%, rgba(172, 220, 84, 1) 1%, rgba(127, 195, 31, 1) 100%);
+                                background: -ms-linear-gradient(top, rgba(172, 220, 84, 1) 0%, rgba(172, 220, 84, 1) 1%, rgba(127, 195, 31, 1) 100%);
+                                background: linear-gradient(to bottom, rgba(172, 220, 84, 1) 0%, rgba(172, 220, 84, 1) 1%, rgba(127, 195, 31, 1) 100%);
+                            }
                         }
                     }
                 }
@@ -189,12 +201,16 @@
                 }
                 .box--border {
                     max-width: 420px;
+                    width: 100%;
                     background: rgba(0, 0, 0, 0.23);
                     border-radius: 3px;
                     display: flex;
                     justify-content: center;
                     align-content: center;
                     align-items: center;
+                    @media all and (max-width: 890px) {
+                        margin: 0 auto;
+                    }
                     .box--content {
                         max-width: 380px;
                         width: 100%;
@@ -293,41 +309,51 @@
                                 padding-top: 3px;
                             }
                             .sing-up {
-                                cursor: pointer;
-                                padding: 0px 20px;
-                                border: 1px solid rgb(59, 154, 0);
-                                border-radius: 3px;
-                                height: 45px;
-                                color: #fff;
-                                background: rgba(172, 220, 84, 1);
-                                background: -moz-linear-gradient(top, rgba(172, 220, 84, 1) 0%, rgba(172, 220, 84, 1) 1%, rgba(127, 195, 31, 1) 100%);
-                                background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(172, 220, 84, 1)), color-stop(1%, rgba(172, 220, 84, 1)), color-stop(100%, rgba(127, 195, 31, 1)));
-                                background: -webkit-linear-gradient(top, rgba(172, 220, 84, 1) 0%, rgba(172, 220, 84, 1) 1%, rgba(127, 195, 31, 1) 100%);
-                                background: -o-linear-gradient(top, rgba(172, 220, 84, 1) 0%, rgba(172, 220, 84, 1) 1%, rgba(127, 195, 31, 1) 100%);
-                                background: -ms-linear-gradient(top, rgba(172, 220, 84, 1) 0%, rgba(172, 220, 84, 1) 1%, rgba(127, 195, 31, 1) 100%);
-                                background: linear-gradient(to bottom, rgba(172, 220, 84, 1) 0%, rgba(172, 220, 84, 1) 1%, rgba(127, 195, 31, 1) 100%);
-                            }
+                                &__button {
+                                    cursor: pointer;
+                                    padding: 0px 20px;
+                                    border: 1px solid rgb(59, 154, 0);
+                                    border-radius: 3px; 
+                                    height: 45px;
+                                    color: #fff;
+                                    background: rgba(172, 220, 84, 1);
+                                    background: -moz-linear-gradient(top, rgba(172, 220, 84, 1) 0%, rgba(172, 220, 84, 1) 1%, rgba(127, 195, 31, 1) 100%);
+                                    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(172, 220, 84, 1)), color-stop(1%, rgba(172, 220, 84, 1)), color-stop(100%, rgba(127, 195, 31, 1)));
+                                    background: -webkit-linear-gradient(top, rgba(172, 220, 84, 1) 0%, rgba(172, 220, 84, 1) 1%, rgba(127, 195, 31, 1) 100%);
+                                    background: -o-linear-gradient(top, rgba(172, 220, 84, 1) 0%, rgba(172, 220, 84, 1) 1%, rgba(127, 195, 31, 1) 100%);
+                                    background: -ms-linear-gradient(top, rgba(172, 220, 84, 1) 0%, rgba(172, 220, 84, 1) 1%, rgba(127, 195, 31, 1) 100%);
+                                    background: linear-gradient(to bottom, rgba(172, 220, 84, 1) 0%, rgba(172, 220, 84, 1) 1%, rgba(127, 195, 31, 1) 100%);
+                                }
+                            } 
                             .add-width {
-                                width: 42%; 
+                                width: 42%;
                             }
-                            .disabled {
-                                opacity: 0.5;
-                            }
-                            .red-style {
+                            .disabled { 
+                                opacity: 0.5;  
+                            }   
+                            .red-style { 
                                 background: rgba(247, 111, 127, 1);
                                 background: -moz-linear-gradient(top, rgba(247, 111, 127, 1) 0%, rgba(240, 55, 70, 1) 100%);
                                 background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(247, 111, 127, 1)), color-stop(100%, rgba(240, 55, 70, 1)));
-                                background: -webkit-linear-gradient(top, rgba(247, 111, 127, 1) 0%, rgba(240, 55, 70, 1) 100%);
+                                background: -webkit-linear-gradient(top, rgba(247, 111, 127, 1) 0%, rgba(240, 55, 70, 1) 100%); 
                                 background: -o-linear-gradient(top, rgba(247, 111, 127, 1) 0%, rgba(240, 55, 70, 1) 100%);
                                 background: -ms-linear-gradient(top, rgba(247, 111, 127, 1) 0%, rgba(240, 55, 70, 1) 100%);
                                 background: linear-gradient(to bottom, rgba(247, 111, 127, 1) 0%, rgba(240, 55, 70, 1) 100%);
                             }
                         }
+                    }  
+                } 
+                .logo-footer { 
+                    max-width: 420px; 
+                    width: 100%;
+                    @media all and (max-width: 890px) {
+                        margin: 0 auto;
                     }
-                }
-                .logo-styles {
-                    opacity: 0.5;
-                    padding: 40px 0px;
+                    &__img {
+                        opacity: 0.5; 
+                        padding: 40px 0px;
+                        width: 100%;
+                    }
                 }
             }
         }
